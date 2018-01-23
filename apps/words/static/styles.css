@@ -1,0 +1,22 @@
+#wrapper {
+    height: 400px;
+    width: 400px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#output {
+    height: 200px;
+    width: auto;
+    background-color: white;
+}
+
+h4 {
+    color: blue;
+}
+
+#butt {
+    margin-top: 5px;
+}

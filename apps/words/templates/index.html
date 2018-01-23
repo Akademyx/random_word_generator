@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel='stylesheet' type="text/css" href="{% static 'styles.css' %}">
+    <title>Random Word Generator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h4>Random Word (attempt #{{count}})</h4>
+        <div id="output" method="post">
+            {% if count > 0 %}
+                {{random}}
+            {% endif %}
+
+        </div>
+        <form action='/process' name="theft">
+            {% csrf_token %}
+            <input type='submit' value='Generate' name="algo" id="butt">
+        </form>
+    </div>
+</body>
+</html>
